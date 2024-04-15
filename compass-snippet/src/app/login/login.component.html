@@ -1,26 +1,12 @@
-
 <div class="login-container">
-    <img src="../../assets/svg/logo.svg" alt="logo">
-    <div class="title">
-        <p>reach your goals</p>
-        <h1>compass</h1>    
-    </div>
-    <p>Align long-term and short-term goals.</p>
-    <!-- <input matInput placeholder="" value="Sushi"> -->
-    <!-- <form class="example-form">
-        <mat-form-field class="example-full-width">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
-                 placeholder="Ex. pat@example.com">
-          <mat-hint>Errors appear instantly!</mat-hint>
-          @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
-            <mat-error>Please enter a valid email address</mat-error>
-          }
-          @if (emailFormControl.hasError('required')) {
-            <mat-error>Email is <strong>required</strong></mat-error>
-          }
-        </mat-form-field>
-      </form> -->
-      
-    <button>Get Started</button>
+  <img src="../../assets/svg/logo.svg" alt="logo">
+  <div class="title">
+    <p>reach your goals</p>
+    <h1>compass</h1>    
+  </div>
+  <p>Align long-term and short-term goals.</p>
+  <mat-form-field>
+    <input #userNameInput matInput placeholder="Enter your name">
+  </mat-form-field>
+  <button (click)="navigateToHome(userNameInput.value)">Get Started</button>
 </div>
