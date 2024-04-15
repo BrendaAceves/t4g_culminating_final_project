@@ -1,0 +1,21 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    color: #909090;
+    text-align: center;
+    gap: 30px;
+
+    h1 {
+        color: #545756;
+        margin: 0px;
+        font-size: 48px;
+    }
+    p {
+        margin: 0px;
+        width: 200px;
+        font-size: 18px;
+    }
+}
