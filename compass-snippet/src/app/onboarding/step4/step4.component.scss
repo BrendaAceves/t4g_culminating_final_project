@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4B5853;
+    text-align: center;
+}
+  
+.stepContainer {
+    background-color: white;
+    padding: 1em;
+    border-radius: 20px;
+    width: 750px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #2DBDB1;
+
+    @media (max-width: 950px) {
+        width: 80%;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    color: #2DBDB1;
+}
+
+button {
+    position: relative;
+    margin-left: auto;
+    margin-right: 15px;
+    border: 2px solid #2DBDB1;
+    background-color: #2DBDB1;
+    color: white;
+    border-radius: 10px;
+    width: 84px;
+    height: 34px;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+}
+
+.buttonContainer {
+    display: flex;
+    margin-left: auto;
+}
+
+.previous {
+    background-color: white;
+    border: 1px solid #2DBDB1;
+    color: #2DBDB1;
+}
+
+.goal {
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+
+p {
+    font-size: 22px;
+    margin: 0px;
+}
