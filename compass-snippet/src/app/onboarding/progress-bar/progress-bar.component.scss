@@ -1,0 +1,65 @@
+.progress-container {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* evenly distribute 5 columns */
+    grid-template-rows: auto auto; /* auto rows for paragraph and circle/line */
+    grid-gap: 10px;
+    text-align: center;
+}
+
+p {
+    margin: 0; /* Remove default margin to ensure even spacing */
+    font-size: 14px;
+    
+    @media (max-width: 500px) {
+        font-size: 10px;
+      }
+      
+}
+
+.goal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* to position the line relative to the circle */
+}
+
+hr {
+    width: 60%; /* Adjust the length of the line as needed */
+    height: 0;
+    border: none;
+    border-top: 1px solid #2DBDB1; /* Horizontal line */
+    margin: 0px;
+}
+
+/* Adjust spacing and alignment as needed */
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-top: 10px;
+}
+.step1 { 
+    grid-column: 1;
+    align-items: center;
+
+    .circle {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        border: 2px solid #2DBDB1;
+        position: relative;
+    }
+    
+}
+
+
+.step2 { grid-column: 2; }
+.step3 { grid-column: 3; }
+.step4 { grid-column: 4; }
+.step5 { grid-column: 5; }
+
+.goal:not(:last-child) .circle {
+    margin-bottom: 20px; /* Adjust the spacing between circles */
+}

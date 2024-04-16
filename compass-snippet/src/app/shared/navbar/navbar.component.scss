@@ -1,0 +1,30 @@
+
+.navbar {
+    display: flex;    
+    flex-direction: row;
+    justify-content: flex-end;
+    // align-items: center;
+    font-size: 16px;
+    color: #2DBDB1;
+    background-color: white;
+    padding: 0.5em;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-right: auto;
+    width: 37px;
+    height: 37px;
+}
+
+.logout {
+    margin-right: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
+}
+p {
+    margin: 0px;
+}
+

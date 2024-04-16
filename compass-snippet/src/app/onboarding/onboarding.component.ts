@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-onboarding',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./onboarding.component.scss']
 })
 export class OnboardingComponent implements OnInit {
+  userName: string = '';
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    // Retrieve the user name from the query parameter
+    this.route.queryParams.subscribe(params => {
+      this.userName = params['name'];
+    });
   }
-
 }

@@ -12,10 +12,25 @@
         color: #545756;
         margin: 0px;
         font-size: 48px;
+        font-weight: 400;
     }
     p {
         margin: 0px;
         width: 200px;
         font-size: 18px;
+
     }
+    .description {
+        color: #4B5853;
+    }
+
+    button {
+        background-color: #2DBDB1;
+        border: 2px solid #2DBDB1;
+        color: white;
+        // font-size: 18px;
+        border-radius: 10px;
+        padding: 0.5em;
+    }
+
 }

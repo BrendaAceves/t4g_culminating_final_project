@@ -13,13 +13,13 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToHome(userName: string) {
+  navigateToOnboarding(userName: string) {
     if (userName.trim() === '') {
-      // If input is empty, navigate to home with default name
-      this.router.navigate(['/home'], { queryParams: { name: 'Guest' } });
+      // If input is empty, navigate to onboarding with default name
+      this.router.navigate(['/onboarding'], { queryParams: { name: 'Guest' } });
     } else {
-      // If input is not empty, navigate to home with entered name
-      this.router.navigate(['/home'], { queryParams: { name: userName } });
+      // If input is not empty, navigate to onboarding with entered name
+      this.router.navigate(['/onboarding'], { queryParams: { name: userName } });
     }
   }
 }

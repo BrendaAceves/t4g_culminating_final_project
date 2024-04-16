@@ -1,12 +1,13 @@
+<app-navbar></app-navbar>
 <div class="login-container">
   <img src="../../assets/svg/logo.svg" alt="logo">
   <div class="title">
     <p>reach your goals</p>
     <h1>compass</h1>    
   </div>
-  <p>Align long-term and short-term goals.</p>
+  <p class="description"><b>Align</b> long-term and short-term goals.</p>
   <mat-form-field>
     <input #userNameInput matInput placeholder="Enter your name">
   </mat-form-field>
-  <button (click)="navigateToHome(userNameInput.value)">Get Started</button>
+  <button (click)="navigateToOnboarding(userNameInput.value)">Get Started</button>
 </div>
