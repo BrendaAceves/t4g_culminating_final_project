@@ -24,23 +24,27 @@
       
 }
 
+img {
+    margin-top: 30px;
+}
+
+.buttonContainer {
+    margin-left: auto;
+    margin-right: -15px;
+
+    button {
+        margin-top: 38px;
+        margin-right: 15px;
+        border: 2px solid #2DBDB1;
+        background-color: #2DBDB1;
+        color: white;
+        border-radius: 10px;
+        height: 33.5px;
+        font-size: 18px;
+        width: 100px;
+    }
+}
 
 h1 {
     font-weight: 400;
-}
-
-button {
-    position: relative;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: 15px;
-    border: 2px solid #2DBDB1;
-    background-color: #2DBDB1;
-    color: white;
-    border-radius: 10px;
-    width: 84px;
-    height: 34px;
-    font-size: 18px;
-    text-align: center;
-    justify-content: center;
 }

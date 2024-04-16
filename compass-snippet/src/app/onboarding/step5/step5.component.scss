@@ -24,6 +24,9 @@
       
 }
 
+img {
+    margin-top: 10px;
+}
 
 h1 {
     font-weight: 400;
@@ -31,33 +34,29 @@ h1 {
 }
 
 
-button {
-    position: relative;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: 15px;
-    border: 2px solid #2DBDB1;
-    background-color: #2DBDB1;
-    color: white;
-    border-radius: 10px;
-    width: 84px;
-    height: 34px;
-    font-size: 18px;
-    text-align: center;
-    justify-content: center;
-}
-
 .buttonContainer {
+    margin-top: 48px;
     display: flex;
     margin-left: auto;
+    justify-content: flex-end;
+    gap: 20px;
 
-}
+    button {
+        border: 2px solid #2DBDB1;
+        background-color: #2DBDB1;
+        color: white;
+        border-radius: 10px;
+        height: 33.6px;
+        font-size: 18px;
+        width: 100px;
+    }    
 
-
-.previous {
-    background-color: white;
-    border: 1px solid #2DBDB1;
-    color: #2DBDB1;
+    .previous {
+        background-color: white;
+        border: 1px solid #2DBDB1;
+        color: #2DBDB1;
+    
+    }    
 }
 
 p {
