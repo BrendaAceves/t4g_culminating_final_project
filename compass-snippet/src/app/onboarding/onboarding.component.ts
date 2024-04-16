@@ -15,6 +15,7 @@ export class OnboardingComponent implements OnInit {
     // Retrieve the user name from the query parameter
     this.route.queryParams.subscribe(params => {
       this.userName = params['name'];
+      console.log(this.userName);
     });
   }
 }

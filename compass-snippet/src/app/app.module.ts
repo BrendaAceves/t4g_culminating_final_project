@@ -21,6 +21,8 @@ import { Step4Component } from './onboarding/step4/step4.component';
 import { Step5Component } from './onboarding/step5/step5.component';
 import { Step6Component } from './onboarding/step6/step6.component';
 import { Step7Component } from './onboarding/step7/step7.component';
+import { GreetingComponent } from './home/greeting/greeting.component';
+import { DatetimeComponent } from './home/datetime/datetime.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { Step7Component } from './onboarding/step7/step7.component';
     Step4Component,
     Step5Component,
     Step6Component,
-    Step7Component
+    Step7Component,
+    GreetingComponent,
+    DatetimeComponent
   ],
   imports: [
     BrowserModule,

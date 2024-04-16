@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute  } from '@angular/router';
 
 @Component({
   selector: 'app-step7',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./step7.component.scss']
 })
 export class Step7Component implements OnInit {
+  userName: string = '';
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      this.userName = params['name'];
+      console.log(this.userName);
+    });
   }
+
+  goToHome() {
+    this.router.navigate(['/home'], { queryParams: { name: this.userName } });
+  }
+
+
 
 }
