@@ -1,0 +1,37 @@
+.datetimeContainer {
+    width: max-content;
+    // background-color: aquamarine;
+    color: #2DBDB1;
+    // Styling the time
+    .time {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        justify-content: flex-end;
+
+        p {
+            margin: 0px;
+            font-size: 12px;
+            align-self: flex-end;
+            width: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0px;
+            font-size: 45px;
+            font-weight: 400;
+        }
+
+    }
+
+    // Styling the Date
+    .date {
+        color: #4B5853;
+        margin: 0px;
+        font-size: 15px;
+        font-weight: 400;
+        
+    }
+}
+

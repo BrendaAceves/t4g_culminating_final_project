@@ -1,1 +1,5 @@
-<p>datetime works!</p>
+<div class="datetimeContainer">
+    <div class="time"><h1>{{today | date:'h:mm'}}</h1><p>{{today | date:'a ss' }}</p></div>
+    <h6 class="date">{{today | date:'MMMM '}}{{today | date:'dd'}}{{ordinal}}{{today | date:' YYYY'}}</h6>
+</div>
+

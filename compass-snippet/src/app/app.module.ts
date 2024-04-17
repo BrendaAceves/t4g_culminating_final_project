@@ -5,6 +5,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSelectModule} from '@angular/material/select';
+// import {MatFormField} from '@angular/material/form-field';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +25,9 @@ import { Step6Component } from './onboarding/step6/step6.component';
 import { Step7Component } from './onboarding/step7/step7.component';
 import { GreetingComponent } from './home/greeting/greeting.component';
 import { DatetimeComponent } from './home/datetime/datetime.component';
+import { WeeklyGoalsComponent } from './home/weekly-goals/weekly-goals.component';
+import { QuarterlyGoalsComponent } from './home/quarterly-goals/quarterly-goals.component';
+import { LongTermGoalsComponent } from './home/long-term-goals/long-term-goals.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +44,10 @@ import { DatetimeComponent } from './home/datetime/datetime.component';
     Step6Component,
     Step7Component,
     GreetingComponent,
-    DatetimeComponent
+    DatetimeComponent,
+    WeeklyGoalsComponent,
+    QuarterlyGoalsComponent,
+    LongTermGoalsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +57,9 @@ import { DatetimeComponent } from './home/datetime/datetime.component';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule,
+    MatSelectModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]

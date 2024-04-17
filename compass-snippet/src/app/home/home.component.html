@@ -1,1 +1,12 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <app-greeting></app-greeting>
+        <app-datetime></app-datetime>
+    </div>
+      <div class="row">
+          <app-weekly-goals [goal1]="weeklyGoal1" [goal2]="weeklyGoal2" [goal3]="weeklyGoal3"></app-weekly-goals>
+          <app-quarterly-goals [goal1]="quarterGoal1" [goal2]="quarterGoal2" [goal3]="quarterGoal3"></app-quarterly-goals>
+          <app-long-term-goals [firstYearGoal]="firstYearGoal" [fifthYearGoal]="fifthYearGoal"></app-long-term-goals>    
+  </div>
+</div>

@@ -1,0 +1,31 @@
+.greetingContainer {
+    background-color: #E1FBF9;
+    color: #2DBDB1;
+    border-radius: 10px;
+    width: 700px;
+    font-size: 32px;
+    justify-content: flex-end;
+
+    p {
+        margin-left: 40px;
+        padding: 20px;
+    }
+
+    @media (width <= 1070px) {
+        width: 600px;
+    }
+
+    @media (width <= 950px) {
+        width: 500px;
+    }
+
+    @media (width <= 540px) {
+        width: 400px;
+        font-size: 22px;
+    }
+
+    @media (width <= 420px) {
+        width: 300px;
+        font-size: 22px;
+    }
+}
