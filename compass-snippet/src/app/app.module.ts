@@ -13,7 +13,6 @@ import { LoginComponent } from './login/login.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { ProgressBarComponent } from './onboarding/progress-bar/progress-bar.component';
 import { Step1Component } from './onboarding/step1/step1.component';
 import { Step2Component } from './onboarding/step2/step2.component';
 import { Step3Component } from './onboarding/step3/step3.component';
@@ -31,7 +30,6 @@ import { DatetimeComponent } from './home/datetime/datetime.component';
     OnboardingComponent,
     HomeComponent,
     NavbarComponent,
-    ProgressBarComponent,
     Step1Component,
     Step2Component,
     Step3Component,

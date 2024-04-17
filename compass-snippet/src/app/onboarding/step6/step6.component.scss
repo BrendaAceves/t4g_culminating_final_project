@@ -1,3 +1,122 @@
+// Progress Bar
+.progressBarContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    margin-top: 45px;
+    @media (width <= 700px) {
+        margin: 50px 0px;
+    }
+
+    .progress {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        width: 80%;
+        justify-content: center;
+
+        .circleActive {
+            width: 32px;
+            height: 26px;
+            border-radius: 50%;
+            border: 2px solid #2DBDB1;
+            margin: auto;
+            line-height: 20px;
+        
+            @media (width <= 425px) {
+                width: 50px;
+            }
+        }
+
+
+        .circleComplete {
+            width: 32px;
+            height: 26px;
+            border-radius: 50%;
+            border: 2px solid #2DBDB1;
+            background-color: #2DBDB1;
+            margin: auto;
+            line-height: 20px;
+        
+            @media (width <= 425px) {
+                width: 50px;
+            }
+        }
+        .circle {
+            width: 32px;
+            height: 26px;
+            border-radius: 50%;
+            border: 2px solid #D3E1DA;
+            margin: auto;
+            line-height: 20px;
+        
+            @media (width <= 425px) {
+                width: 50px;
+            }
+        }
+
+        .circle, .circleActive, .circleComplete {
+            position: relative;
+            text-align: center;
+
+            // "Status" Points (text above circles)
+            .activeStep {
+                color: #2DBDB1;
+            }
+            
+        
+            p {
+                position: absolute;
+                top: -30px;
+                width: 150px;
+                // top: -60px; /* Adjust this value as needed */
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+                font-size: 14px; /* Adjust font size as needed */
+                color: #D3E1DA;
+
+                @media (width <= 700px) {
+                    width: 80px;
+                    top: -37px;
+                    font-size: 14px;
+                    line-height: 15px;
+                
+                }
+                @media (width <= 425px) {
+                    width: 80px;
+                    top: -37px;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    
+    }
+    hr {
+        width: 25%;
+        border: none;
+        border-top: 2px solid #D3E1DA;
+        margin: 0;
+    }
+
+    // Active Line
+    .hrActive {
+        border: 1px solid;
+        border-image: linear-gradient(to right, #2DBDB1, #D3E1DA);
+        border-image-slice: 1;
+    }
+    
+    .hrComplete {
+        width: 25%;
+        border: none;
+        border-top: 2px solid #2DBDB1;
+        margin: 0;
+
+    } 
+}
+
+
 .container {
     display: flex;
     justify-content: center;
