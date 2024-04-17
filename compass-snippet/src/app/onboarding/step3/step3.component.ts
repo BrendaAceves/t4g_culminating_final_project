@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute  } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-step3',
@@ -8,14 +8,19 @@ import { Router, ActivatedRoute  } from '@angular/router';
 })
 export class Step3Component implements OnInit {
   userName: string = '';
+  firstYearGoal: string = '';
+  fifthYearGoal: string = '';
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.userName = params['name'];
-      console.log(this.userName);
+      this.firstYearGoal = params['firstYearGoal'];
+      this.fifthYearGoal = params['fifthYearGoal'];
     });
+    console.log("First Year Goal (Step 3):", this.firstYearGoal);
+    console.log("5th Year Goal (Step 3):", this.fifthYearGoal);
   }
 
   goToPreviousStep() {
@@ -23,8 +28,12 @@ export class Step3Component implements OnInit {
   }
 
   goToNextStep() {
-    this.router.navigate(['/onboarding', 'step4'], { queryParams: { name: this.userName } });
+    this.router.navigate(['/onboarding', 'step4'], {
+      queryParams: {
+        name: this.userName,
+        firstYearGoal: this.firstYearGoal,
+        fifthYearGoal: this.fifthYearGoal,
+      }
+    });
   }
-
-
 }

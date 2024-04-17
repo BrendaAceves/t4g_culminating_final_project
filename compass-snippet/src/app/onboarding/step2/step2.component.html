@@ -3,19 +3,19 @@
         <h1>What are your long term goals?</h1>
         <p class="description">Keep it short and sweet.</p>
         <!-- 1 Year Goal -->
-            <h2>1 Year Goal</h2>
-            <mat-form-field>
-                <input #userNameInput matInput placeholder="Enter your 1 year goal">
-            </mat-form-field>
-            <!-- 5 Year Goal -->
-            <h2>5 Year Goal</h2>
-            <mat-form-field>
-                <input #userNameInput matInput placeholder="Enter your 5 year goal">
-            </mat-form-field>       
+        <h2>1 Year Goal</h2>
+        <mat-form-field>
+            <input #firstYearGoalInput matInput placeholder="Enter your 1 year goal">
+        </mat-form-field>
+        <h2>5 Year Goal</h2>
+        <mat-form-field>
+            <input #fifthYearGoalInput matInput placeholder="Enter your 5 year goal">
+        </mat-form-field>
             
+        <!-- Button Container -->
         <div class="buttonContainer">
             <button class="previous" (click)="goToPreviousStep()">Back</button>
-            <button class="next" (click)="goToNextStep()">Next</button>                 
+            <button class="next" (click)="goToNextStep(fifthYearGoalInput.value, firstYearGoalInput.value)">Next</button>                 
         </div>
     </div>
 </div>

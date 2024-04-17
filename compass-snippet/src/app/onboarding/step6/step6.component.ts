@@ -7,24 +7,60 @@ import { Router, ActivatedRoute  } from '@angular/router';
   styleUrls: ['./step6.component.scss']
 })
 export class Step6Component implements OnInit {
-  
+  // Input Parameters
   userName: string = '';
+  firstYearGoal: string = '';
+  fifthYearGoal: string = '';
+  quarterGoal1: string = '';
+  quarterGoal2: string = '';
+  quarterGoal3: string = '';
+  weeklyGoal1: string = '';
+  weeklyGoal2: string = '';
+  weeklyGoal3: string = '';
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.userName = params['name'];
-      console.log(this.userName);
+      this.firstYearGoal = params['firstYearGoal'];
+      this.fifthYearGoal = params['fifthYearGoal'];
+      this.quarterGoal1 = params['quarterGoal1'];
+      this.quarterGoal2 = params['quarterGoal2'];
+      this.quarterGoal3 = params['quarterGoal3'];
     });
+    console.log("QuarterGoal1:", this.quarterGoal1);
+    console.log("QuarterGoal2:", this.quarterGoal2);
+    console.log("QuarterGoal3:", this.quarterGoal3);
   }
 
   goToPreviousStep() {
-    this.router.navigate(['/onboarding', 'step5'], { queryParams: { name: this.userName } });
+    this.router.navigate(['/onboarding', 'step5'], {
+      queryParams: {
+        name: this.userName,
+        firstYearGoal: this.firstYearGoal,
+        fifthYearGoal: this.fifthYearGoal,
+        quarterGoal1: this.quarterGoal1,
+        quarterGoal2: this.quarterGoal2,
+        quarterGoal3: this.quarterGoal3,
+      }
+    });
   }
 
-  goToNextStep() {
-    this.router.navigate(['/onboarding', 'step7'], { queryParams: { name: this.userName } });
+  goToNextStep(weeklyGoal1: string, weeklyGoal2: string, weeklyGoal3: string) {
+    this.router.navigate(['/onboarding', 'step7'], {
+      queryParams: {
+        name: this.userName,
+        firstYearGoal: this.firstYearGoal,
+        fifthYearGoal: this.fifthYearGoal,
+        quarterGoal1: this.quarterGoal1,
+        quarterGoal2: this.quarterGoal2,
+        quarterGoal3: this.quarterGoal3,
+        weeklyGoal1: weeklyGoal1,
+        weeklyGoal2: weeklyGoal2,
+        weeklyGoal3: weeklyGoal3,
+      }
+    });
   }
 
 
