@@ -14,7 +14,8 @@ export class NavbarComponent implements OnInit {
   }
 
   logOut() {
-    this.router.navigate(['./login']);
+    console.log("take home")
+    this.router.navigate(['/login']); // Absolute path to the login route
   }
 
 }
